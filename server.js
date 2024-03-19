@@ -103,6 +103,4 @@ socket.on("message", message => {
 
 
 
-server.listen(PORT, () => {
-  console.log("listening on PORT: ", PORT);
-});
+server.listen(process.env.PORT || 5000);
